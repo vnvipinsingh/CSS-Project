@@ -1,0 +1,54 @@
+body{
+    background: greenyellow;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; */
+}
+
+.calculator{
+    border: 5px solid chocolate;
+    display: grid;
+    justify-content: center; /* align items horizontally */
+    align-content: center; /* align items vertically */
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button{
+    height: 12vh;
+    font-size: 2rem;
+    border: 1px solid white;
+    background-color: antiquewhite
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+.column-2{
+    grid-column: span 2;
+}
+
+.output{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* align items vertically main axis */
+    align-items: flex-end; /* align items horizontally cross axis */
+    grid-column: span 4;
+
+    height: 20vh;
+    padding:8px;
+    background-color: black;
+}
+
+.result{
+    color: white;
+    font-size: 2rem;
+    margin: auto 0;
+}
+
+.input{
+    color: white;
+    font-size: 3rem;
+    margin: auto 0;
+}
