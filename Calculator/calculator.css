@@ -4,11 +4,10 @@
 }
 
 body{
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
-
-    padding: 20px;
+    align-items: center;
+    height: 100vh;
     background: greenyellow;
 }
 
@@ -21,7 +20,8 @@ body{
 }
 
 button{
-    height: 12vh;
+    min-height: 12vh;
+    min-width: 12vw;
     font-size: 2rem;
     border: 1px solid white;
     background-color: antiquewhite
@@ -42,19 +42,20 @@ button:hover {
     align-items: flex-end;
     grid-column: span 4;
 
-    height: 20vh;
+    min-height: 20vh;
+    min-width: 48vw;
     padding:8px;
     background-color: black;
 }
 
 .result{
-    color: white;
     font-size: 2rem;
+    color: white;
     margin: auto 0;
 }
 
 .input{
-    color: white;
     font-size: 3rem;
+    color: white;
     margin: auto 0;
 }
